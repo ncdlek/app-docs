@@ -1,6 +1,6 @@
 # Terms of Service for Capture GO
 
-**Effective Date:** January 13, 2026
+**Effective Date:** September 6, 2026
 
 ## 1. Acceptance of Terms
 By downloading or using Capture GO ("the App"), you agree to these Terms of Service. If you do not agree, please do not use the App.
@@ -18,11 +18,12 @@ We grant you a personal, non-exclusive, non-transferable, revocable license to u
 - All purchases are final and non-refundable, except as required by law or Apple's policies.
 - **Subscriptions:** If you purchase a recurring subscription, payment will be charged to your Apple ID account at confirmation of purchase. Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period.
 
-## 5. Online Conduct
-You agree not to:
-- Harass, abuse, or harm other players.
+## 5. Conduct
+Online multiplayer is currently switched off. Whether or not it is active, you
+agree not to:
 - Use cheats, exploits, or unauthorized software to manipulate the game.
 - Attempt to gain unauthorized access to our servers.
+- Harass, abuse, or harm other players, should online play return.
 
 ## 6. Intellectual Property
 All content in the App, including artwork, code, and "Capture GO" branding, is owned by us or our licensors.
@@ -38,3 +39,8 @@ We may update these terms at any time. Continued use of the App constitutes acce
 
 ## 10. Contact
 For questions regarding these terms, please contact: engin@yazilan.org
+
+---
+
+[Capture GO](index.html) · [Support](support.html) ·
+[Privacy Policy](privacypolicy.html)
