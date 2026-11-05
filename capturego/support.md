@@ -19,13 +19,20 @@ board. Those empty neighbouring points are called *liberties*, and putting a
 stone down to one last liberty is called *atari*.
 
 **Do I need an internet connection?**
-No. The AI opponent runs entirely on your iPhone, so the whole game works
-offline, including in airplane mode. No account is required to play.
+Not to play the AI. It runs entirely on your iPhone, so games against it work
+offline, including in airplane mode, and no account is required. Online matches
+need a connection.
 
-**Is online play available?**
-Not at the moment. Online multiplayer is switched off: there were too few
-players for matchmaking to reliably find you an opponent. Everything else in the
-app is unaffected.
+**How does online play work?**
+Before a game starts, tap the Quick Match button beside the board. If another
+player is waiting you are matched straight away; otherwise the app waits up to
+30 seconds for someone to join. The server draws each online game's opening
+(the classic four-stone start or an empty board) and its capture goal — one,
+three or five — and the reels on the board show you what came up.
+
+Every move has a 60-second clock. If it runs out, you lose the game, and
+leaving a game before it ends counts as a loss too. Online play needs the
+latest version of the app.
 
 **Is the game free?**
 Yes. You can play against the AI for free, and life stones refill on their own
@@ -47,8 +54,7 @@ Yes. Every control has a VoiceOver label, the app supports Dynamic Type through
 the accessibility text sizes, and it respects Reduce Motion.
 
 **Which languages does it support?**
-English, German, French, Japanese, Korean, Russian, Turkish and Simplified
-Chinese.
+Arabic, Chinese (Simplified and Traditional), Czech, Dutch, English, French, German, Indonesian, Italian, Japanese, Korean, Polish, Portuguese (Brazil and Portugal), Russian, Spanish, Thai, Turkish, Ukrainian and Vietnamese.
 
 **I bought coins or a pass and did not receive it.**
 Purchases are restored from your Apple ID. Try Shop → Restore Purchases first.

@@ -14,8 +14,11 @@ The rule fits on one line: **surround a stone, lift it off the board, you win.**
 
 - **An opponent that runs on your iPhone.** Five difficulty levels that
   genuinely differ — level one plays like a real beginner, level five will
-  punish a loose stone. No account, no connection, and no move ever leaves your
-  device. The whole game works in airplane mode.
+  punish a loose stone. Playing it needs no account and no connection, and no
+  move ever leaves your device — it works in airplane mode.
+- **Quick online matches.** When another player is online, one tap beside the
+  board starts a game against them. The opening and capture goal are drawn for
+  you, and every move is on the clock.
 - **A tutorial that explains itself.** Every term is defined before it is used,
   and you can skip or step back from any point.
 - **Shapes worth collecting.** The tiger's mouth, the bamboo joint, the ladder —
@@ -31,8 +34,7 @@ The rule fits on one line: **surround a stone, lift it off the board, you win.**
 Every control carries a VoiceOver label, the whole app scales with Dynamic Type
 through the accessibility text sizes, and Reduce Motion is respected.
 
-Available in English, German, French, Japanese, Korean, Russian, Turkish and
-Simplified Chinese.
+Available in 20 languages: Arabic, Chinese (Simplified and Traditional), Czech, Dutch, English, French, German, Indonesian, Italian, Japanese, Korean, Polish, Portuguese (Brazil and Portugal), Russian, Spanish, Thai, Turkish, Ukrainian and Vietnamese.
 
 ## Free to play
 

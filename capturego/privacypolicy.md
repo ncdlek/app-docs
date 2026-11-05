@@ -1,7 +1,7 @@
 # Privacy Policy for Capture GO
 
-**Effective Date:** September 6, 2026
-**Previous version:** January 13, 2026
+**Effective Date:** November 5, 2026
+**Previous version:** September 6, 2026
 
 Capture GO ("we", "us", "our") values your privacy. This policy describes what
 the app collects, why, and what it does not do.
@@ -14,6 +14,9 @@ the app collects, why, and what it does not do.
   contains no advertising SDKs and never asks for tracking permission, because
   it never tracks you.
 - **No account is required to play.**
+- **Other players can see your public profile** — username, avatar, rank,
+  game statistics and coin balance — and, while the app is open, that you are online. Your moves
+  go through our servers only when you play an online match. See section 4.
 - We do not sell your personal data.
 
 ## 2. What we collect
@@ -57,15 +60,27 @@ not shared with us beyond what Apple provides for verifying it.
 
 These providers process data on our behalf. We do not sell data to anyone.
 
-## 4. Online multiplayer
+## 4. Online play and what other players see
 
-Online multiplayer is **currently switched off** in the app, so no match data is
-being exchanged with other players. If it returns, this policy will be updated
-before it does, and the section below will describe it accurately:
+Matchmaking has to know who is around before you tap Quick Match, so two things
+are visible to other players' apps whether or not you play online:
 
-> When online play is active, a username and avatar emoji you have chosen are
-> visible to your opponent, and moves are relayed through our servers to keep
-> both sides of the game in sync.
+- **Your public profile** — the username and avatar emoji you chose, your rank,
+  your game statistics (games played, won, lost and drawn) and your coin
+  balance.
+- **Presence.** While the app is open: your username and avatar, the fact that
+  you are online, whether you have an active pass, and your app version.
+
+When you play an online match:
+
+- **Moves.** Each move is sent to our servers, which check it against the rules,
+  keep the move clock, relay it to your opponent and decide the result, rewards
+  and rating changes.
+- **Game records.** Finished online games are stored on our servers so you can
+  replay them and so a disputed result can be checked.
+
+None of this needs your name, email address or location: it is tied to the
+anonymous account described above and to the username you chose.
 
 ## 5. Children
 
@@ -83,6 +98,7 @@ with your account at any time.
 ## 7. Your choices
 
 - Play without signing in, and nothing is linked to an Apple ID.
+- Change your username or avatar at any time; other players see the new one.
 - Delete the app to remove all locally stored games.
 - Ask us to delete your server-side data — see below.
 
