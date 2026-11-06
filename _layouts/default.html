@@ -30,6 +30,7 @@
   <header class="topbar">
     <div class="wrap topbar-inner">
       {%- if app %}
+      <a class="home-link" href="{{ '/' | relative_url }}" aria-label="All apps"><span aria-hidden="true">←</span> All apps</a>
       <a class="brand" href="{{ app_home | relative_url }}">
         <img src="{{ app.icon | relative_url }}" alt="" width="36" height="36">
         <span>{{ app.name }}</span>

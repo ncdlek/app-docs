@@ -38,10 +38,13 @@ think about the game instead of the clock. Game Clock Pro handles the time
 controls Go, chess and shogi players actually use — including
 <strong>byo-yomi</strong> — and reads the countdown out loud when it matters.</p>
 
-<figure class="figure">
-  <img class="device" src="{{ '/assets/img/gameclockpro/clock-mockup.svg' | relative_url }}" alt="The clock screen: the opponent's face is turned toward them, the running player's face shows 27 seconds of byo-yomi with two periods left" width="320" height="620">
-  <figcaption>Each player gets a face turned toward them. Tap your side to pass the turn.</figcaption>
-</figure>
+<div class="shots" aria-label="Screenshots">
+  <figure><img src="{{ '/assets/img/gameclockpro/shot-1.jpg' | relative_url }}" alt="Absolute time: two 15-minute clocks, the top one turned toward the opponent" width="600" height="1299" loading="lazy"><figcaption>Put the phone between you</figcaption></figure>
+  <figure><img src="{{ '/assets/img/gameclockpro/shot-2.jpg' | relative_url }}" alt="Japanese byo-yomi with dots showing the periods left, in the dark and light themes" width="600" height="1299" loading="lazy"><figcaption>Byo-yomi with period tracking</figcaption></figure>
+  <figure><img src="{{ '/assets/img/gameclockpro/shot-3.jpg' | relative_url }}" alt="A game in progress in a dark theme, the opponent's clock upside down at the top" width="600" height="1299" loading="lazy"><figcaption>Clear, distraction-free</figcaption></figure>
+  <figure><img src="{{ '/assets/img/gameclockpro/shot-4.jpg' | relative_url }}" alt="Settings: choosing between Japanese byo-yomi, Canadian byo-yomi, Fischer, Absolute, Bronstein and Delay, with handicap time below" width="600" height="1299" loading="lazy"><figcaption>Six time controls</figcaption></figure>
+  <figure><img src="{{ '/assets/img/gameclockpro/shot-5.jpg' | relative_url }}" alt="Settings: theme, alert threshold, countdown alert method, vibration and language" width="600" height="1299" loading="lazy"><figcaption>Voice countdown, vibration, themes</figcaption></figure>
+</div>
 
 ## Six time controls
 
@@ -64,12 +67,5 @@ controls Go, chess and shogi players actually use — including
   <div class="card"><span class="icon" aria-hidden="true">🔋</span><h3>Easy on the battery</h3><p>Keeps the screen awake during a game, lowers the frame rate when nothing changes and drops into low power when paused.</p></div>
   <div class="card"><span class="icon" aria-hidden="true">♿️</span><h3>Accessible</h3><p>VoiceOver labels throughout, and a High Contrast theme.</p></div>
 </div>
-
-## Six themes
-
-<figure class="figure">
-  <img src="{{ '/assets/img/gameclockpro/themes.svg' | relative_url }}" alt="The six themes: Light, Dark, Cherry Blossom, Wood, Ocean and High Contrast" width="718" height="150" loading="lazy">
-  <figcaption>Wood is the colour of a kaya goban; High Contrast is for bright rooms and low vision.</figcaption>
-</figure>
 
 {% include app-facts.html %}

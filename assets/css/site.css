@@ -139,4 +139,8 @@ th { font-weight: 600; }
 /* Footer */
 .footer { border-top: 1px solid var(--line); color: var(--muted); padding: 24px 0 40px; font-size: 15px; }
 .footer p { margin: 4px 0; }
-.figure img.device { width: 250px; }
+.home-link {
+  font-size: 15px; color: var(--muted); text-decoration: none;
+  padding: 6px 12px 6px 0; border-right: 1px solid var(--line); white-space: nowrap;
+}
+.home-link:hover { color: var(--ink); }
