@@ -1,25 +1,39 @@
 # App Docs
 
-Support and legal pages for the apps by Engin Yazılan.
+Support, privacy and marketing pages for the apps by Engin Yazılan, published
+with GitHub Pages at <https://ncdlek.github.io/app-docs/>.
 
-## Capture GO
+## Structure
 
-Go, without the intimidating part. Learn the game by playing the capture
-variant — surround one stone and you win. The AI opponent runs entirely on your
-iPhone, so it works offline.
+Every app has the same four pages, and App Store Connect links to them, so
+**keep these paths stable**:
 
-[App page](capturego/index.html) ·
-[Support](capturego/support.html) ·
-[Privacy Policy](capturego/privacypolicy.html) ·
-[Terms of Service](capturego/termsofservice.html) ·
-[App Store](https://apps.apple.com/app/id6751532288)
+| Page | Path | Used as |
+|---|---|---|
+| Overview | `<app>/index.md` | Marketing URL |
+| Support | `<app>/support.md` | Support URL |
+| Privacy | `<app>/privacypolicy.md` | Privacy Policy URL |
+| Terms | `<app>/termsofservice.md` | Terms / EULA link |
 
-## Game Clock Pro
+- `_data/apps.yml` — the facts for each app (price, devices, languages,
+  features, who it is for). The page header, the schema.org JSON-LD and
+  `llms.txt` are all generated from it: change a fact here, not in the pages.
+- `_layouts/default.html` — shared layout; a page picks its app with
+  `app: <key>` and its tab with `kind: home | support | privacy | terms`.
+- `faq:` in a page's front matter renders the FAQ and its `FAQPage` JSON-LD.
+- `assets/img/<app>/` — icon, screenshots and diagrams.
+- `llms.txt` — plain-text summary for AI assistants (ChatGPT, Claude, Gemini,
+  Perplexity).
 
-An advanced game clock for Go and Chess tournaments.
+## Adding an app
 
-[App Store](https://apps.apple.com/app/id6736820083)
+1. Add an entry to `_data/apps.yml`.
+2. Copy the four pages from an existing app folder and change `app:`.
+3. Put a 256×256 `icon.png` in `assets/img/<app>/`.
 
----
+## Apps
+
+- **Capture GO** — learn Go through the capture game. [Overview](https://ncdlek.github.io/app-docs/capturego/)
+- **Game Clock Pro** — a byo-yomi, Fischer and Bronstein game clock. [Overview](https://ncdlek.github.io/app-docs/gameclockpro/)
 
 Contact: engin@yazilan.org

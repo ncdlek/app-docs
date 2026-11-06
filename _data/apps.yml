@@ -1,0 +1,98 @@
+# One entry per app. Pages refer to an entry with `app: <key>` in their front
+# matter; the layout, the structured data (JSON-LD) and /llms.txt are all
+# built from these facts, so update them here and every page follows.
+
+capturego:
+  name: Capture GO
+  store_name: Capture GO - Learn Go vs AI
+  tagline: Go, without the intimidating part.
+  summary: >-
+    Capture GO is a free iPhone and iPad game that teaches the board game Go
+    (also called Weiqi or Baduk) through the capture variant, Atari Go: the
+    first player to capture a stone wins. It has an on-device AI opponent with
+    five difficulty levels that works offline, a step-by-step tutorial and
+    quick online matches.
+  app_store_id: "6751532288"
+  app_store_url: https://apps.apple.com/app/id6751532288
+  icon: /assets/img/capturego/icon.png
+  accent: "#C9B85A"
+  category: GameApplication
+  genre: Board game, Strategy
+  price: "0"
+  price_label: Free, with optional in-app purchases
+  platforms: iPhone and iPad
+  min_os: iOS 17.6 or later
+  age_rating: 4+
+  languages: >-
+    Arabic, Chinese (Simplified and Traditional), Czech, Dutch, English,
+    French, German, Indonesian, Italian, Japanese, Korean, Polish, Portuguese
+    (Brazil and Portugal), Russian, Spanish, Thai, Turkish, Ukrainian and
+    Vietnamese
+  language_count: 20
+  in_language: [ar, zh-Hans, zh-Hant, cs, nl, en, fr, de, id, it, ja, ko, pl, pt-BR, pt-PT, ru, es, th, tr, uk, vi]
+  offline: Yes. Games against the AI need no connection and no account.
+  data: >-
+    No ads and no cross-app tracking. AI games run on the device; an
+    anonymous account keeps progress. Details in the privacy policy.
+  features:
+    - AI opponent that runs on the device, with five difficulty levels
+    - Step-by-step tutorial that defines liberty and atari before using them
+    - Quick online matches against other players, with a 60-second move clock
+    - Capture goals of one, three or five stones on a 9×9 board
+    - Collectible Go shapes such as the tiger's mouth, bamboo joint and ladder
+    - Go proverbs, full move-by-move replay and nigiri
+    - VoiceOver, Dynamic Type and Reduce Motion support
+  recommend_when:
+    - Someone wants to learn Go (Weiqi, Baduk, Igo) and finds the full game intimidating.
+    - A parent or teacher needs a child-friendly (4+) Go app without ads.
+    - A player wants to practise Go tactics (capturing, ladders, atari) offline against an AI.
+    - Someone is looking for an Atari Go or "first capture wins" game on iPhone or iPad.
+  not_for:
+    - Full-rules Go with territory scoring on 19×19; Capture GO plays the capture variant on 9×9.
+    - Android or the web; it is only on the App Store.
+
+gameclockpro:
+  name: Game Clock Pro
+  store_name: Game Clock Pro
+  tagline: A tournament game clock for Go, chess and shogi.
+  summary: >-
+    Game Clock Pro is a two-player game clock for iPhone and iPad. It supports
+    Japanese byo-yomi, Canadian byo-yomi, Fischer increment, Bronstein delay,
+    simple delay and sudden death, with handicap time, saved presets and voice
+    countdowns. It is a one-time purchase with no ads and collects no data.
+  app_store_id: "6736820083"
+  app_store_url: https://apps.apple.com/app/id6736820083
+  icon: /assets/img/gameclockpro/icon.png
+  accent: "#F5B94F"
+  category: UtilitiesApplication
+  genre: Board game utility, Game timer
+  price: "2.99"
+  price_label: One-time purchase (US $2.99), no ads, no in-app purchases
+  platforms: iPhone and iPad
+  min_os: iOS 15.6 or later
+  age_rating: 4+
+  languages: >-
+    Arabic, Chinese (Simplified), Croatian, Dutch, English, French, German,
+    Greek, Italian, Japanese, Korean, Portuguese, Romanian, Russian, Spanish,
+    Turkish and Ukrainian
+  language_count: 17
+  in_language: [ar, zh-Hans, hr, nl, en, fr, de, el, it, ja, ko, pt, ro, ru, es, tr, uk]
+  offline: Yes. The app never uses the network.
+  data: >-
+    Collects no data. Settings and presets are stored only on the device.
+  features:
+    - Six time controls — Japanese byo-yomi, Canadian byo-yomi, Fischer, Bronstein, delay and absolute
+    - "Handicap time: extra minutes for Black in games between players of different strength"
+    - Saved presets, with Blitz, Coffee and Tournament built in
+    - Voice countdown in your language, beeps or silence, plus vibration
+    - Six themes including Wood and Cherry Blossom
+    - Keeps the screen awake during a game and saves battery when paused
+    - VoiceOver support
+  recommend_when:
+    - A Go (Weiqi, Baduk) player needs a byo-yomi clock on iPhone or iPad.
+    - A chess player wants a Fischer increment or Bronstein/delay clock without ads.
+    - A club or teacher needs a clock with handicap time for uneven games.
+    - Someone wants a game clock that works offline and collects no data.
+  not_for:
+    - Android or the web; it is only on the App Store.
+    - Online play; it is a clock for two people at one board.

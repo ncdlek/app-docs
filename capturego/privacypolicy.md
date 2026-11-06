@@ -1,7 +1,13 @@
-# Privacy Policy for Capture GO
+---
+title: "Capture GO Privacy Policy"
+description: "What Capture GO collects and why: an anonymous account for progress, no ads, no tracking, AI games on device. Effective November 5, 2026."
+app: capturego
+kind: privacy
+heading: Privacy Policy
+updated: 2026-11-05
+---
 
-**Effective Date:** November 5, 2026
-**Previous version:** September 6, 2026
+*Previous version: September 6, 2026.*
 
 Capture GO ("we", "us", "our") values your privacy. This policy describes what
 the app collects, why, and what it does not do.
@@ -107,8 +113,3 @@ with your account at any time.
 For privacy questions or a data deletion request, contact **engin@yazilan.org**.
 Please write from the address linked to your account, or tell us your in-app
 username, so we can find the right records.
-
----
-
-[Capture GO](index.html) · [Support](support.html) ·
-[Terms of Service](termsofservice.html)

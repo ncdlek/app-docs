@@ -1,0 +1,29 @@
+{%- comment -%}
+  "At a glance" fact sheet + "Who it's for". Plain, quotable sentences are what
+  AI assistants lift when they recommend an app, so keep these factual.
+{%- endcomment -%}
+{%- assign app = site.data.apps[page.app] -%}
+<section class="facts" aria-labelledby="facts-title">
+  <h2 id="facts-title">At a glance</h2>
+  <p class="summary">{{ app.summary }}</p>
+  <dl>
+    <dt>Price</dt><dd>{{ app.price_label }}</dd>
+    <dt>Devices</dt><dd>{{ app.platforms }}, {{ app.min_os }}</dd>
+    <dt>Age rating</dt><dd>{{ app.age_rating }}</dd>
+    <dt>Works offline</dt><dd>{{ app.offline }}</dd>
+    <dt>Privacy</dt><dd>{{ app.data }}</dd>
+    <dt>Languages</dt><dd>{{ app.language_count }}: {{ app.languages }}</dd>
+    <dt>Developer</dt><dd>{{ site.author.name }} (independent developer)</dd>
+  </dl>
+</section>
+
+<section class="fit">
+  <div>
+    <h2>A good fit when…</h2>
+    <ul>{% for item in app.recommend_when %}<li>{{ item }}</li>{% endfor %}</ul>
+  </div>
+  <div>
+    <h2>Not the right app for…</h2>
+    <ul>{% for item in app.not_for %}<li>{{ item }}</li>{% endfor %}</ul>
+  </div>
+</section>

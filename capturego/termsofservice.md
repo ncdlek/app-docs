@@ -1,6 +1,11 @@
-# Terms of Service for Capture GO
-
-**Effective Date:** November 5, 2026
+---
+title: "Capture GO Terms of Service"
+description: "Terms of Service for Capture GO: licence, accounts, virtual items and purchases, fair play in online matches."
+app: capturego
+kind: terms
+heading: Terms of Service
+updated: 2026-11-05
+---
 
 ## 1. Acceptance of Terms
 By downloading or using Capture GO ("the App"), you agree to these Terms of Service. If you do not agree, please do not use the App.
@@ -40,8 +45,3 @@ We may update these terms at any time. Continued use of the App constitutes acce
 
 ## 10. Contact
 For questions regarding these terms, please contact: engin@yazilan.org
-
----
-
-[Capture GO](index.html) · [Support](support.html) ·
-[Privacy Policy](privacypolicy.html)

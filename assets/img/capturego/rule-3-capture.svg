@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220" role="img" aria-label="Black fills the last liberty and captures the white stone">
+<title>Black fills the last liberty and captures the white stone</title>
+<defs>
+<radialGradient id="gb" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#5a5a5a"/><stop offset="1" stop-color="#0d0d0d"/></radialGradient>
+<radialGradient id="gw" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d9d4ca"/></radialGradient>
+</defs>
+<rect width="220" height="220" rx="14" fill="#dcb26e"/>
+<g stroke="#7a5426" stroke-width="1.4"><line x1="30" y1="30" x2="190" y2="30"/><line x1="30" y1="30" x2="30" y2="190"/><line x1="30" y1="70" x2="190" y2="70"/><line x1="70" y1="30" x2="70" y2="190"/><line x1="30" y1="110" x2="190" y2="110"/><line x1="110" y1="30" x2="110" y2="190"/><line x1="30" y1="150" x2="190" y2="150"/><line x1="150" y1="30" x2="150" y2="190"/><line x1="30" y1="190" x2="190" y2="190"/><line x1="190" y1="30" x2="190" y2="190"/></g>
+<circle cx="70" cy="110" r="17" fill="url(#gb)"/><circle cx="150" cy="110" r="17" fill="url(#gb)"/><circle cx="110" cy="70" r="17" fill="url(#gb)"/><circle cx="110" cy="150" r="17" fill="url(#gb)"/><circle cx="110" cy="110" r="16" fill="none" stroke="#7a5426" stroke-width="2" stroke-dasharray="4 4"/><text x="110" y="116" text-anchor="middle" font-family="-apple-system,Helvetica,Arial" font-size="17" font-weight="700" fill="#7a5426">+1</text>
+</svg>

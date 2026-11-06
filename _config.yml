@@ -1,0 +1,28 @@
+title: Apps by Engin Yazılan
+description: >-
+  Official pages for iPhone and iPad apps by Engin Yazılan: Capture GO, a free
+  way to learn the board game Go, and Game Clock Pro, a game clock for Go,
+  chess and shogi.
+url: https://ncdlek.github.io
+baseurl: /app-docs
+lang: en
+
+author:
+  name: Engin Yazılan
+  email: engin@yazilan.org
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+plugins:
+  - jekyll-sitemap
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+
+exclude:
+  - README.md
+  - CLAUDE.md

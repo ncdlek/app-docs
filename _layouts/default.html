@@ -1,0 +1,97 @@
+{%- assign app = site.data.apps[page.app] -%}
+{%- capture page_title -%}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{%- endcapture -%}
+{%- assign page_desc = page.description | default: app.summary | default: site.description | strip_newlines | strip -%}
+{%- assign canonical = page.url | replace: 'index.html', '' | absolute_url -%}
+{%- if app -%}{%- assign app_home = '/' | append: page.app | append: '/' -%}{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_desc | escape }}">
+  <link rel="canonical" href="{{ canonical }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_desc | escape }}">
+  <meta property="og:url" content="{{ canonical }}">
+  {%- if app %}
+  <meta property="og:image" content="{{ app.icon | absolute_url }}">
+  <meta name="apple-itunes-app" content="app-id={{ app.app_store_id }}">
+  <link rel="icon" href="{{ app.icon | relative_url }}">
+  {%- endif %}
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" type="text/plain" title="LLM summary" href="{{ '/llms.txt' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {% include structured-data.html app=app canonical=canonical description=page_desc %}
+</head>
+<body class="kind-{{ page.kind | default: 'site' }}"{% if app %} style="--accent: {{ app.accent }}"{% endif %}>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      {%- if app %}
+      <a class="brand" href="{{ app_home | relative_url }}">
+        <img src="{{ app.icon | relative_url }}" alt="" width="36" height="36">
+        <span>{{ app.name }}</span>
+      </a>
+      <nav class="tabs" aria-label="{{ app.name }} pages">
+        <a href="{{ app_home | relative_url }}"{% if page.kind == 'home' %} aria-current="page"{% endif %}>Overview</a>
+        <a href="{{ app_home | append: 'support.html' | relative_url }}"{% if page.kind == 'support' %} aria-current="page"{% endif %}>Support</a>
+        <a href="{{ app_home | append: 'privacypolicy.html' | relative_url }}"{% if page.kind == 'privacy' %} aria-current="page"{% endif %}>Privacy</a>
+        <a href="{{ app_home | append: 'termsofservice.html' | relative_url }}"{% if page.kind == 'terms' %} aria-current="page"{% endif %}>Terms</a>
+      </nav>
+      {%- else %}
+      <a class="brand" href="{{ '/' | relative_url }}"><span>{{ site.title }}</span></a>
+      {%- endif %}
+    </div>
+  </header>
+
+  <main class="wrap">
+    {%- if app and page.kind == 'home' %}
+    <section class="hero">
+      <img class="hero-icon" src="{{ app.icon | relative_url }}" alt="{{ app.name }} app icon" width="112" height="112">
+      <div>
+        <h1>{{ app.name }}</h1>
+        <p class="tagline">{{ app.tagline }}</p>
+        <p class="hero-meta">{{ app.price_label }} · {{ app.platforms }} · {{ app.min_os }}</p>
+        <a class="store-button" href="{{ app.app_store_url }}">Download on the App Store</a>
+      </div>
+    </section>
+    {%- elsif page.heading %}
+    <header class="page-head">
+      <h1>{{ page.heading }}</h1>
+      {%- if page.updated %}<p class="updated">Effective {{ page.updated | date: "%B %-d, %Y" }}</p>{% endif %}
+    </header>
+    {%- endif %}
+
+    <article class="content">
+      {{ content }}
+
+      {%- if page.faq %}
+      <section class="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">{{ page.faq_title | default: 'Frequently asked questions' }}</h2>
+        {%- for item in page.faq %}
+        <details{% if forloop.first %} open{% endif %}>
+          <summary>{{ item.q }}</summary>
+          <div class="answer">{{ item.a | markdownify }}</div>
+        </details>
+        {%- endfor %}
+      </section>
+      {%- endif %}
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>Questions, bugs or ideas: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+      <p class="footer-apps">
+        {%- for entry in site.data.apps %}
+        <a href="{{ '/' | append: entry[0] | append: '/' | relative_url }}">{{ entry[1].name }}</a> ·
+        {%- endfor %}
+        <a href="{{ '/' | relative_url }}">All apps</a>
+      </p>
+      <p class="small">© {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
+    </div>
+  </footer>
+</body>
+</html>

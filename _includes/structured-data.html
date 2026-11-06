@@ -1,0 +1,55 @@
+{%- comment -%}
+  Schema.org JSON-LD. Search engines and AI assistants read this to know what
+  the page is about without parsing the prose. Facts come from _data/apps.yml.
+{%- endcomment -%}
+{%- assign app = include.app -%}
+{%- if app and page.kind == 'home' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": {{ app.name | jsonify }},
+  "alternateName": {{ app.store_name | jsonify }},
+  "description": {{ app.summary | strip_newlines | jsonify }},
+  "url": {{ include.canonical | jsonify }},
+  "image": {{ app.icon | absolute_url | jsonify }},
+  "applicationCategory": {{ app.category | jsonify }},
+  "genre": {{ app.genre | jsonify }},
+  "operatingSystem": {{ app.min_os | jsonify }},
+  "availableOnDevice": {{ app.platforms | jsonify }},
+  "contentRating": {{ app.age_rating | jsonify }},
+  "inLanguage": {{ app.in_language | jsonify }},
+  "featureList": {{ app.features | jsonify }},
+  "installUrl": {{ app.app_store_url | jsonify }},
+  "sameAs": [{{ app.app_store_url | jsonify }}],
+  "offers": {
+    "@type": "Offer",
+    "price": {{ app.price | jsonify }},
+    "priceCurrency": "USD",
+    "url": {{ app.app_store_url | jsonify }}
+  },
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "email": {{ site.author.email | prepend: 'mailto:' | jsonify }}
+  }
+}
+</script>
+{%- endif %}
+{%- if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | markdownify | strip_html | strip | jsonify }} }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>
+{%- endif %}
